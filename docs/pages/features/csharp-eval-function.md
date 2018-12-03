@@ -15,17 +15,24 @@ The library support nearly everything:
 
 # Eval.Execute
 
-The execute function will resolve, compile, execute the expression and return the result either as a simple type or a result object.
+## Description
+The execute function will resolve, compile, execute the expression and return the result either as a simple type or a result object. The expression can be a static string or a string with reference toward a objects present in the code.
 
 ## String expression
 The expression to execute can be a single string with no other parameters. With this option the string cannot be composed of dynamic content. This method can be used to process content from an external source, like a webpage or a REST client.
 
 ### Example
 ```csharp
-string isEvenFunction = "<Number> % 2 == 0";
-isEvenFunction = isEvenFunction.Replace("<Number>", "4");
-Console.WriteLine(isEvenFunction);
-bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
+	public static void Main()
+	{
+		string paramNumber = "4";
+		string isEvenFunction = "<Number> % 2 == 0";
+		
+		isEvenFunction = isEvenFunction.Replace("<Number>", paramNumber);
+		bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
+		
+		Console.WriteLine("Is " + paramNumber + " a even number? " + IsEvenNumber);
+	}
 ```
 [Try it](https://dotnetfiddle.net/8z8spq)
 
