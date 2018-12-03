@@ -96,10 +96,10 @@ int result = compiled(1, 2);
 | :--- | :---------- | :------ |
 | `TResult Execute(string code)` | Resolve, compile, execute the expression and return the result. | [Try it](https://dotnetfiddle.net/lqfF8b) |
 | `TResult Execute<TResult>(string code)` | Resolve, compile, execute the expression and return the result. | [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute(string code, object parameters)` | Resolve, compile, execute the expression and return the result. The 'parameters' will be use to resolve the content of the expression. | [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute<TResult>(string code, object parameters)` | Resolve, compile, execute the expression and return the result. The parameters will be use to resolve the content of the expression.| [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute(string code, params object[] parameters)` | Resolve, compile, execute the expression and return the result. The parameters will be use to resolve the content of the expression.| [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute<TResult>(string code, params object[] parameters)` | Resolve, compile, execute the expression and return the result. The parameters will be use to resolve the content of the expression. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute(string code, object parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute<TResult>(string code, object parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression.| [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute(string code, params object[] parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression.| [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute<TResult>(string code, params object[] parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression. | [Try it](https://dotnetfiddle.net/lqfF8b) |
 
 
 
