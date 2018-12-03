@@ -15,7 +15,7 @@ The library support nearly everything:
 
 # Eval.Execute
 
-The execute function will resolve, compile, execute the expression and return the result of the execution.
+The execute function will resolve, compile, execute the expression and return the result either as a simple type or a result object.
 
 ## String expression
 The expression to execute can be a single string with no other parameters. With this option the string cannot be composed of dynamic content. This method can be used to process content from an external source, like a webpage or a REST client.
