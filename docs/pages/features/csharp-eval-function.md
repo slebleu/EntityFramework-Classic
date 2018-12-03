@@ -3,7 +3,7 @@
 ## Description
 You can evaluate c# code dynamically, at runtime, using the [Eval Expression.NET](http://eval-expression.net/) library.
 
-This library is a free addon included with the purchase of EF Classic license.
+This library is a free addon included with your purchase of [EF Classic license](https://entityframework-classic.net/).
 
 The library support nearly everything:
 - Anonymous Type
