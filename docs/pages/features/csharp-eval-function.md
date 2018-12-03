@@ -67,7 +67,7 @@ int result = Eval.Execute<int>("X + Y", values);
 [Try it]()
 
 # Eval.Compile
-Eval.Compile work like Eval.Execute except that it returns a [delegate object](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)
+Eval.Compile work like Eval.Execute except that it returns a TDelegate Object.
 If you are going to execute the same expression multiple times, in a loop for instance, using compile instead to get better performance and optimize your code.
 
 ### Example
