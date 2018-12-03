@@ -13,7 +13,7 @@ The library support nearly everything:
 - Method Overloads
 - Async Method
 
-## Eval.Execute
+# Eval.Execute
 
 The execute function will resolve, compile, execute the expression and return the result of the execution.
 
@@ -66,8 +66,9 @@ int result = Eval.Execute<int>("X + Y", values);
 
 [Try it]()
 
+## Object result
 
-## Eval.Compile
+# Eval.Compile
 
 ```csharp
 // Delegate Func
