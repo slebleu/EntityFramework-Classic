@@ -21,11 +21,10 @@ The execute fonction will resolve, compile, execute the expression and return th
 The expression to execute can be a single string with no other parameters. With this option the string cannot be composed of dynamic content. This method can be used to process content from an external source, like a webpage or a REST client.
 
 ```csharp
-
-		string isEvenFunction = "<Number> % 2 == 0";
-		isEvenFunction = isEvenFunction.Replace("<Number>", "4");
-		Console.WriteLine(isEvenFunction);
-		bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
+string isEvenFunction = "<Number> % 2 == 0";
+isEvenFunction = isEvenFunction.Replace("<Number>", "4");
+Console.WriteLine(isEvenFunction);
+bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
 ```
 [Try it](https://dotnetfiddle.net/W9TwcP)
 
