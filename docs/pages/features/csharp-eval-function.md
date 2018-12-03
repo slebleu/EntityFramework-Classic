@@ -25,13 +25,13 @@ The expression to execute can be a single string with no other parameters. With 
 ```csharp
 	public static void Main()
 	{
-		string paramNumber = "4";
-		string isEvenFunction = "<Number> % 2 == 0";
+		string mathExpression = "%";
 		
-		isEvenFunction = isEvenFunction.Replace("<Number>", paramNumber);
-		bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
+		string formula = "4 <MathFunction> 2";		
+		formula = formula.Replace("<MathFunction>", mathExpression);
+		var formulaResult = Eval.Execute(formula);
 		
-		Console.WriteLine("Is " + paramNumber + " a even number? " + IsEvenNumber);
+		Console.WriteLine(formula + " = " + formulaResult);
 	}
 ```
 [Try it](https://dotnetfiddle.net/8z8spq)
