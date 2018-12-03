@@ -1,4 +1,4 @@
-# C# Eval Function (Enterprise Feature)
+# C# Eval Expression (Enterprise Feature)
 
 ## Description
 You can evaluate c# code dynamically, at runtime, using the [Eval Expression.NET](http://eval-expression.net/) library.
@@ -16,25 +16,22 @@ The library support nearly everything:
 # Eval.Execute
 
 ## Description
-The execute function will resolve, compile, execute the expression and return the result either as a simple type or a result object. The expression can be a static string or a string with reference toward a objects present in the code.
+The execute function will resolve, compile, execute the expression and return the result either as a strongly type result or a result object. The expression can be a static string or a string with reference toward a objects present in the code.
 
 ## Static String expression
 The expression to execute can be a single string with no other parameters. With this option the string cannot be composed of dynamic content. This method can be used to process content from an external source, like a webpage or a REST client.
 
 ### Example
 ```csharp
-	public static void Main()
-	{
-		string mathExpression = "%";
-		
-		string formula = "4 <MathFunction> 2";		
-		formula = formula.Replace("<MathFunction>", mathExpression);
-		var formulaResult = Eval.Execute(formula);
-		
-		Console.WriteLine(formula + " = " + formulaResult);
-	}
+public static void Main()
+{
+	string mathExpression = "+";	
+	string formula = "4 <MathFunction> 2";		
+	formula = formula.Replace("<MathFunction>", mathExpression);
+	var formulaResult = Eval.Execute(formula);
+}
 ```
-[Try it](https://dotnetfiddle.net/8z8spq)
+[Try it](https://dotnetfiddle.net/E2oeb7)
 
 ## Dynamic String Expression with object parameter
 The expression to execute can be a string that reference an object from your code. With this option the string can be entirely composed of dynamic content. This can be used to build dynamic filters or execute user-based regular expression.
