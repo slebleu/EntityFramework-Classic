@@ -86,3 +86,22 @@ int result = compiled(1, 2);
 ```
 
 [Try it](https://dotnetfiddle.net/MBHlX8)
+
+
+### Eval.Execute
+
+###### Methods
+
+| Name | Description | Example |
+| :--- | :---------- | :------ |
+| `TResult Execute(string code)` | Filter an entity type using a predicate. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute<TResult>(string code)` | Filter an entity type using a predicate. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute(string code, object parameters)` | Filter an entity type using a predicate. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute<TResult>(string code, object parameters)` | Filter an entity type using a predicate. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute(string code, params object[] parameters)` | Filter an entity type using a predicate. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+| `TResult Execute<TResult>(string code, params object[] parameters)` | Filter an entity type using a predicate. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+
+
+
+
+
