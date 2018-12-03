@@ -15,18 +15,22 @@ The library support nearly everything:
 
 ## Eval.Execute
 
-The execute fonction will resolve, compile, execute the expression and return the result of the execution.
+The execute function will resolve, compile, execute the expression and return the result of the execution.
 
 ## String expression
 The expression to execute can be a single string with no other parameters. With this option the string cannot be composed of dynamic content. This method can be used to process content from an external source, like a webpage or a REST client.
 
+### Example
 ```csharp
 string isEvenFunction = "<Number> % 2 == 0";
 isEvenFunction = isEvenFunction.Replace("<Number>", "4");
 Console.WriteLine(isEvenFunction);
 bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
 ```
-[Try it](https://dotnetfiddle.net/W9TwcP)
+[Try it]()
+
+## String Expression with object parameter
+The expression to execute can be a string that reference an object from your code. With this option the string can be entirely composed of dynamic content. This can be used to build dynamic filters or execute user-based regular expression.
 
 ### Example
 
@@ -49,6 +53,10 @@ int result = Eval.Execute<int>("X + Y", values);
 ```
 
 [Try it](https://dotnetfiddle.net/W9TwcP)
+
+## String Expression with array of object parameters
+Is it also possible to use an array of object parameters which enable you to create more complex expressions than with a single object.
+
 
 ## Eval.Compile
 
