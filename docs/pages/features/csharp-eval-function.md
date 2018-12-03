@@ -56,6 +56,15 @@ int result = Eval.Execute<int>("X + Y", values);
 
 ## String Expression with array of object parameters
 Is it also possible to use an array of object parameters which enable you to create more complex expressions than with a single object.
+### Example
+
+```csharp
+// Parameter: Dictionary Key
+var values = new Dictionary<string, object>() { {"X", 1}, {"Y", 2} };
+int result = Eval.Execute<int>("X + Y", values);
+```
+
+[Try it]()
 
 
 ## Eval.Compile
