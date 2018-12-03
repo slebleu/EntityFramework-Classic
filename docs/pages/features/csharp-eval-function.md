@@ -18,7 +18,7 @@ The library support nearly everything:
 ## Description
 The execute function will resolve, compile, execute the expression and return the result either as a simple type or a result object. The expression can be a static string or a string with reference toward a objects present in the code.
 
-## String expression
+## Static String expression
 The expression to execute can be a single string with no other parameters. With this option the string cannot be composed of dynamic content. This method can be used to process content from an external source, like a webpage or a REST client.
 
 ### Example
@@ -36,7 +36,7 @@ The expression to execute can be a single string with no other parameters. With 
 ```
 [Try it](https://dotnetfiddle.net/8z8spq)
 
-## String Expression with object parameter
+## Dynamic String Expression with object parameter
 The expression to execute can be a string that reference an object from your code. With this option the string can be entirely composed of dynamic content. This can be used to build dynamic filters or execute user-based regular expression.
 
 ### Example
@@ -61,7 +61,7 @@ int result = Eval.Execute<int>("X + Y", values);
 
 [Try it](https://dotnetfiddle.net/W9TwcP)
 
-## String Expression with array of object parameters
+## Dynamic String Expression with array of object parameters
 Is it also possible to use an array of object parameters which enable you to create more complex expressions than with a single object.
 ### Example
 
