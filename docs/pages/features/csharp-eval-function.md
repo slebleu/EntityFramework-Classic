@@ -27,7 +27,7 @@ isEvenFunction = isEvenFunction.Replace("<Number>", "4");
 Console.WriteLine(isEvenFunction);
 bool IsEvenNumber = Eval.Execute<bool>(isEvenFunction);
 ```
-[Try it]()
+[Try it](https://dotnetfiddle.net/8z8spq)
 
 ## String Expression with object parameter
 The expression to execute can be a string that reference an object from your code. With this option the string can be entirely composed of dynamic content. This can be used to build dynamic filters or execute user-based regular expression.
