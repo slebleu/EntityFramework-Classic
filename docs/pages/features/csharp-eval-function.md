@@ -55,9 +55,9 @@ Is it also possible to use an array of object parameters which enable you to cre
 ```csharp
 public static void Main()
 {
-	object[] equation = new object[]{4, 2, "+"};
-	var formulaResult = Eval.Execute("{0}" + equation[2] + "{1}", equation);
-	Console.WriteLine(formulaResult);
+	var values = new Dictionary<string, object>() { {"Constant1", 1}, {"Constant2", 2}, {"Operator", "+"}};
+	var result = Eval.Execute("Constant1" + values["Operator"] + "Constant2", values);
+	Console.WriteLine(result);
 }
 ```
 
