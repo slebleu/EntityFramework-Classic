@@ -53,12 +53,15 @@ Is it also possible to use an array of object parameters which enable you to cre
 ### Example
 
 ```csharp
-// Parameter: Dictionary Key
-var values = new Dictionary<string, object>() { {"X", 1}, {"Y", 2} };
-int result = Eval.Execute<int>("X + Y", values);
+public static void Main()
+{
+	object[] equation = new object[]{4, 2, "+"};
+	var formulaResult = Eval.Execute("{0}" + equation[2] + "{1}", equation);
+	Console.WriteLine(formulaResult);
+}
 ```
 
-[Try it]()
+[Try it](https://dotnetfiddle.net/LiY9tT)
 
 # Eval.Compile
 Eval.Compile work like Eval.Execute except that it returns a TDelegate Object.
