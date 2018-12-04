@@ -67,14 +67,15 @@ public static void Main()
 
 ###### Methods
 
-| Name | Description | Example |
-| :--- | :---------- | :------ |
-| `TResult Execute(string code)` | Resolve, compile, execute the expression and return the result. | [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute<TResult>(string code)` | Resolve, compile, execute the expression and return the result. | [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute(string code, object parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression. | [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute<TResult>(string code, object parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression.| [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute(string code, params object[] parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression.| [Try it](https://dotnetfiddle.net/lqfF8b) |
-| `TResult Execute<TResult>(string code, params object[] parameters)` | Resolve, compile, execute the expression and return the result. The `parameters` will be use to resolve the content of the expression. | [Try it](https://dotnetfiddle.net/lqfF8b) |
+`TResult Execute(string code)`
+`TResult Execute(string code, object parameters)`
+`TResult Execute(string code, params object[] parameters)`
+
+###### Strong Typed Methods
+
+`TResult Execute<TResult>(string code)`
+`TResult Execute<TResult>(string code, object parameters)`
+`TResult Execute<TResult>(string code, params object[] parameters)` 
 
 
 
