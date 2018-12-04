@@ -34,7 +34,7 @@ public static void Main()
 [Try it](https://dotnetfiddle.net/E2oeb7)
 
 ## Dynamic String Expression with object parameter
-The expression to execute can be a string that reference an object from your code. With this option the string can be entirely composed of dynamic content. This can be used to build dynamic filters or execute user-based regular expression. You can either use the properties or the methods of the object.
+The expression to execute can be a string that reference an object from your code. With this option the string can be entirely composed of dynamic content. This can be used to build dynamic filters or execute user-based regular expression. You reference either the properties or the methods of the object.
 
 ### Example
 
@@ -46,9 +46,6 @@ public static void Main()
 	Console.WriteLine(equation.GetFormula() + " = "+ formulaResult);
 }
 ```
-
-
-
 [Try it](https://dotnetfiddle.net/nCKYkL)
 
 ## Dynamic String Expression with array of object parameters
