@@ -67,15 +67,15 @@ public static void Main()
 
 ###### Methods
 
-`TResult Execute(string code)`
-`TResult Execute(string code, object parameters)`
-`TResult Execute(string code, params object[] parameters)`
+*`TResult Execute(string code)`
+*`TResult Execute(string code, object parameters)`
+*`TResult Execute(string code, params object[] parameters)`
 
 ###### Strong Typed Methods
 
-`TResult Execute<TResult>(string code)`
-`TResult Execute<TResult>(string code, object parameters)`
-`TResult Execute<TResult>(string code, params object[] parameters)` 
+*`TResult Execute<TResult>(string code)`
+*`TResult Execute<TResult>(string code, object parameters)`
+*`TResult Execute<TResult>(string code, params object[] parameters)` 
 
 
 
