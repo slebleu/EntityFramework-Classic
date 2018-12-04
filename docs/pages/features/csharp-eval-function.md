@@ -63,28 +63,6 @@ public static void Main()
 
 [Try it](https://dotnetfiddle.net/LiY9tT)
 
-# Eval.Compile
-Eval.Compile work like Eval.Execute except that it returns a TDelegate Object.
-If you are going to execute the same expression multiple times, in a loop for instance, using compile instead to get better performance and optimize your code.
-
-### Example
-```csharp
-// Delegate Func
-var compiled = Eval.Compile<Func<int, int, int>>("{0} + {1}");
-int result = compiled(1, 2);
-
-// Delegate Action
-var compiled = Eval.Compile<Action<int, int>>("{0} + {1}");
-compiled(1, 2);
-
-// Named Parameter
-var compiled = Eval.Compile<Func<int, int, int>>("X + Y", "X", "Y");
-int result = compiled(1, 2);
-```
-
-[Try it](https://dotnetfiddle.net/MBHlX8)
-
-
 ### Eval.Execute
 
 ###### Methods
